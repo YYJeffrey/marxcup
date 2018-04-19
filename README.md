@@ -13,12 +13,12 @@ This project is used to complete the "The Marx Cup" competition and achieved a g
 进入Python官网安装Python3 https://www.python.org/downloads/
 
 #### 四、安装json、requests
-系统默认会配置好Pyhton的环境变量，之后需要在cmd中安装两个Python第三方库
-pip install json
+系统默认会配置好Pyhton的环境变量，之后需要在cmd中安装两个Python第三方库<br/>
+pip install json<br/>
 pip install requests
 
 #### 五、运行脚本
-python MarxCup.py
+python MarxCup.py<br/>
 输入刚才的那串answerId数字之后回车等待结果，大约15秒左右
 
 ##### 此脚本未捕获任何异常，多次测试后均能正常使用
