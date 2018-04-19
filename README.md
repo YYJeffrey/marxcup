@@ -21,4 +21,4 @@ pip install requests
 python MarxCup.py<br/>
 输入刚才的那串answerId数字之后回车等待结果，大约15秒左右
 
-##### 此脚本未捕获任何异常，多次测试后均能正常使用
+##### 此脚本未捕获任何异常，经多次测试均能正常使用
