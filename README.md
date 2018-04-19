@@ -1,5 +1,6 @@
 # MarxCup
 This project is used to complete the "The Marx Cup" competition and achieved a good result.
+本脚本用于完成卡尔马克思杯竞赛，并获得一个不错的结果。
 
 ## 使用步骤
 #### 一、补全信息
@@ -13,11 +14,11 @@ This project is used to complete the "The Marx Cup" competition and achieved a g
 
 #### 四、安装json、requests
 系统默认会配置好Pyhton的环境变量，之后需要在cmd中安装两个Python第三方库
-···Bash
 pip install json
-···
-···Bash
 pip install requests
-···
+
+#### 五、运行脚本
+python MarxCup.py
+输入刚才的那串answerId数字之后回车等待结果，大约15秒左右
 
 ##### 此脚本未捕获任何异常，多次测试后均能正常使用
