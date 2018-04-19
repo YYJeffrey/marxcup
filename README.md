@@ -1,6 +1,6 @@
 # MarxCup
-This project is used to complete the "The Marx Cup" competition and achieved a good result.
-本脚本用于完成卡尔马克思杯竞赛，并获得一个不错的结果。
+This project is used to complete the "The Marx Cup" competition and achieved a good result.<br/>
+本脚本用于完成卡尔马克思杯竞赛，并获得一个不错的结果
 
 ## 使用步骤
 #### 一、补全信息
