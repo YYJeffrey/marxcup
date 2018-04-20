@@ -15,7 +15,7 @@ data = {'answerId': answerId, 'queryItems': True}
 r = requests.post(url, data=data)
 json_data = json.loads(r.text)['body']['examItems']
 false_answer = []
-if (int(score_str) >= 0) and (int(score_str) <= 100):
+if (int(score_str) >= 40) and (int(score_str) <= 100):
     false_answer = random.sample(range(1, 61), 100 - int(score_str))  # 随机错误答案，根据您输入的分数而定
 
 for j in range(80):
@@ -26,12 +26,13 @@ for j in range(80):
         questions = json_data[j]['jsonData']['multiple']['options']
 
     answer = []
-    for i in range(4):
-        if j in false_answer:
+    if j in false_answer:
+        for i in range(4):
             if not questions[i]['rightAnswers']:
                 answer.append(i)
-            break
-        else:
+                break
+    else:
+        for i in range(4):
             if questions[i]['rightAnswers']:
                 answer.append(i)
 
