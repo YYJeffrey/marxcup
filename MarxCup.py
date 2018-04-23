@@ -7,8 +7,9 @@ import random
 import time
 
 # login_url = 'https://www.qingsuyun.com/h5/107515/pc/exam/collection/#paperId=1803217582'
-answerId = input('请输入answerId：')
-score_str = input('请输入您想要的分数：')
+answerId = input('您的answerId：')
+score_str = input('您想要的分数：')
+delay_second = input('您每题想要几秒完成：')
 
 url = 'https://www.qingsuyun.com/h5/actions/exam/execute/find-exam.json'
 data = {'answerId': answerId, 'queryItems': True}
@@ -36,7 +37,7 @@ for j in range(80):
             if questions[i]['rightAnswers']:
                 answer.append(i)
 
-    time.sleep(random.uniform(1, 3))    # 增加1-3秒的随机延迟防ban
+    time.sleep(random.uniform(int(delay_second)-1, int(delay_second)+1))    # 波动延迟防BAN
     answer_url = 'https://www.qingsuyun.com/h5/actions/exam/execute/submit-answer.json'
     answer_data = {'answerId': answerId, 'questionId': questionId, 'answerContent': answer}
     result = requests.post(url=answer_url, data=answer_data)
